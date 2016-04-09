@@ -1,0 +1,26 @@
+<% content_for :title do %>My super sweet dashboard<% end %>
+<div class="gridster">
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-view="Clock"></div>
+      <i class="icon-time icon-background"></i>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="memory" data-view="Meter" data-title="Memory" data-min="0" data-max="100"></div>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="cpu" data-view="Meter" data-title="CPU" data-min="0" data-max="100"></div>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="disk" data-view="Meter" data-title="Disk" data-min="0" data-max="100"></div>
+    </li>
+    <li data-row="2" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="nodejs" data-view="Image" data-title="NodeJs" data-image="/lightoff.png"></div>
+    </li>
+    <li data-row="2" data-col="2" data-sizex="1" data-sizey="1">
+      <div data-id="coreapi" data-view="Image" data-title="CoreApi" data-image="/lightoff.png"></div>
+    </li>
+    <li data-row="2" data-col="3" data-sizex="1" data-sizey="1">
+      <div data-id="worker" data-view="Image" data-title="Worker" data-image="/lightoff.png"></div>
+    </li>
+</div>
