@@ -4,6 +4,11 @@ class Dashing.Image extends Dashing.Widget
     # This is fired when the widget is done being rendered
 
   onData: (data) ->
+    classToSet = data.status || 'image'
+    $(@node).removeClass('widget-image')
+    $(@node).removeClass('widget-failure')
+    $(@node).removeClass('widget-success')
+    $(@node).addClass('widget-'+classToSet)
     #$(@node).fadeOut().fadeIn()
     # Handle incoming data
     # You can access the html node of this widget with `@node`

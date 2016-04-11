@@ -2,6 +2,8 @@
 // Sass declarations
 // ----------------------------------------------------------------------------
 $background-color:  #4b4b4b;
+$background-success-color:  #2ecc71;
+$background-failure-color:  #e74c3c;
 
 // ----------------------------------------------------------------------------
 // Widget-image styles
@@ -9,6 +11,18 @@ $background-color:  #4b4b4b;
 .widget-image {
 
   background-color: $background-color;
+
+}
+
+.widget-success {
+
+  background-color: $background-success-color;
+
+}
+
+.widget-failure {
+
+  background-color: $background-failure-color;
 
 }
 
