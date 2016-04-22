@@ -13,10 +13,12 @@ SCHEDULER.every '5s' do
   node_running = json_response["node"]
   worker_running = json_response["worker"]
   coreapi_running = json_response["api"]
+  docxworker_running = json_response["docxworker"]
   send_event('disk', { value: disk_percent, moreinfo: disk_text})
   send_event('memory', { value: memory_percent, moreinfo: memory_text})
   send_event('cpu', { value: cpu_percent, moreinfo: cpu_text})
-  send_event('nodejs', { image: "#{node_running ? '/lighton.png' : '/lightoff.png'}", moreinfo: "UI is #{node_running ? 'running': 'down'}"}) 
-  send_event('worker', { image: "#{worker_running ? '/lighton.png' : '/lightoff.png'}", moreinfo: "Worker is #{worker_running ? 'running': 'down'}"}) 
-  send_event('coreapi', { image: "#{coreapi_running ? '/lighton.png' : '/lightoff.png'}", moreinfo: "API is #{coreapi_running ? 'running': 'down'}"}) 
+  send_event('amazonui', { image: "#{node_running ? '/lighton.png' : '/lightoff.png'}", moreinfo: "UI is #{node_running ? 'running': 'down'}"})
+  send_event('compworker', { image: "#{worker_running ? '/lighton.png' : '/lightoff.png'}", moreinfo: "Worker is #{worker_running ? 'running': 'down'}"})
+  send_event('coreapi', { image: "#{coreapi_running ? '/lighton.png' : '/lightoff.png'}", moreinfo: "API is #{coreapi_running ? 'running': 'down'}"})
+  send_event('docxworker', { image: "#{docxworker_running ? '/lighton.png' : '/lightoff.png'}", moreinfo: "Docx worker is #{docxworker_running ? 'running': 'down'}"})
 end
