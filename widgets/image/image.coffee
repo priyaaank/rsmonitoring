@@ -8,6 +8,7 @@ class Dashing.Image extends Dashing.Widget
     $(@node).removeClass('widget-image')
     $(@node).removeClass('widget-failure')
     $(@node).removeClass('widget-success')
+    $(@node).removeClass('widget-progress')
     $(@node).addClass('widget-'+classToSet)
     #$(@node).fadeOut().fadeIn()
     # Handle incoming data

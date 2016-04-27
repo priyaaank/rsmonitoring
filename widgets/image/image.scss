@@ -4,6 +4,7 @@
 $background-color:  #4b4b4b;
 $background-success-color:  #2ecc71;
 $background-failure-color:  #e74c3c;
+$background-progress-color:  #FFAB00;
 
 // ----------------------------------------------------------------------------
 // Widget-image styles
@@ -23,6 +24,12 @@ $background-failure-color:  #e74c3c;
 .widget-failure {
 
   background-color: $background-failure-color;
+
+}
+
+.widget-progress {
+
+  background-color: $background-progress-color;
 
 }
 
