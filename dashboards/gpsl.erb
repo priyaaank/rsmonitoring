@@ -1,0 +1,29 @@
+<% content_for :title do %>Redshift dashboard<% end %>
+<div class="gridster">
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-view="Clock"></div>
+      <i class="icon-time icon-background"></i>
+    </li>
+    <li data-row="1" data-col="2" data-sizex="1" data-sizey="1">
+      <div data-id="gpslmemory" data-view="Meter" data-title="Memory" data-min="0" data-max="100"></div>
+    </li>
+    <li data-row="1" data-col="3" data-sizex="1" data-sizey="1">
+      <div data-id="gpslcpu" data-view="Meter" data-title="CPU" data-min="0" data-max="100"></div>
+    </li>
+    <li data-row="1" data-col="4" data-sizex="1" data-sizey="1">
+      <div data-id="gpsldisk" data-view="Meter" data-title="Disk" data-min="0" data-max="100"></div>
+    </li>
+    <li data-row="2" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="gpslamazonui" data-view="Image" data-title="Amazon UI" data-image="/lightoff.png"></div>
+    </li>
+    <li data-row="2" data-col="2" data-sizex="1" data-sizey="1">
+      <div data-id="gpslcoreapi" data-view="Image" data-title="API" data-image="/lightoff.png"></div>
+    </li>
+    <li data-row="2" data-col="3" data-sizex="1" data-sizey="1">
+      <div data-id="gpslcompworker" data-view="Image" data-title="Comp Worker" data-image="/lightoff.png"></div>
+    </li>
+    <li data-row="2" data-col="4" data-sizex="1" data-sizey="1">
+      <div data-id="gpsldocxworker" data-view="Image" data-title="Docx Worker" data-image="/lightoff.png"></div>
+    </li>
+</div>
